@@ -1,0 +1,353 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main{											/* whole body */
+  width: 100%;
+  height: 940px;
+  background-image: url(./t_pic.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-overlay{                               /* for darkening the background of whole body */
+	width: 100%;
+  height: 940px;
+	background-color: rgba(0,0,0, 0.4);
+
+}
+
+.header{
+  width: 100%;
+  height: 70px;
+  display: flex;           /*horizontal align of items */
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  /* background-color: rgb(74, 137, 142); */
+}
+.container {										/* 1st container conntaining 3 bar */
+  padding-top: 3px;
+	padding-left: 20px;
+  cursor: pointer;
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {                        /* 3 bar(more option) */
+	width: 35px;
+	height: 5px;
+	background-color: rgb(5, 0, 0);
+  list-style: none;
+  margin: 6px 0 ;
+	transition: 0.4s;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  .search-container{                                            /*search container */
+  flex: 1;
+  text-align: left;
+	/* padding-top: -7px; */
+	padding-left: 155px;
+  margin-top: 20px;  
+  position:relative;
+  }
+  .search-container .search input[type=text]{       /* search bar */
+  width: 406px;
+  padding: 6px;
+	margin-top: 2px;
+  margin-bottom: 6px;
+	font-size: 17px;
+  border-radius: 12px;
+	border: 3px solid #01454e;
+  outline: none;
+  color: #9DBFAE;
+  }
+  .search-container .search button{                  /*search button */
+  padding: 4px 8px;
+	margin-top: -10px;
+	margin-right: 25px;
+  border: 1px solid #01454e;
+  background: #01454e;
+  border-radius: 10px;
+	font-size: 19px;
+	cursor: pointer;
+  }
+  .search-container .search button:hover {                  /* hovering on search button */
+	background: #ccc;		
+  }			
+
+  .lis{                                    /* ul box */
+  flex: 1;
+  margin-top: 20px;
+  text-align: right;
+  }
+  .lis li{                                     /* list icon */
+  list-style: none;
+  display: inline-block;
+  margin-top:-10px ;
+  margin-left: 30px;
+  }
+  .lis li a{                                   /* list link */
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  }
+  li a:hover{ 								/* hovering on header links */
+  background-color: white;
+  padding: 5px 5px;
+  color: black;
+  transition: 0.4s ease;
+}
+
+.wrapper{											/* using of flex divide the whole part into either row or column ,align the element of the container */
+  height: 850px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.registration_form{  								/* registration form */
+	background: rgba(0,0,0,0.6); 
+	padding: 6px;
+	border-radius: 15px;
+	width: 410px;
+	height: 600px;
+  margin-top:-142px;
+	margin-left:45px ;
+  box-shadow: 10px 10px 5px whitesmoke;
+}
+
+.registration_form .title{									/* registration_form title */
+  color: #8897bb;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left:-25px;
+  margin-right:-25px;
+}
+
+.form_wrap{													/* form_wrapping from top */
+	margin-top: 16px;
+}
+
+.form_wrap .input_wrap{ 							/* form_wrap-> input_wrapping from bottom */
+	margin-bottom: 10px;
+}
+
+.form_wrap .input_wrap:last-child{
+	margin-bottom: -3px;
+}
+
+.form_wrap .input_wrap label{						/* property of form_wrap labels */
+	display: block;
+	margin-bottom: 3px;
+	color: #e8e8ef;
+}
+
+.form_wrap .input_grp{									/* form_wrap -> input_grp wrapping (first and last name) */
+	display: flex;
+	justify-content: space-between;
+}
+
+.form_wrap .input_grp  input[type="text"]{			/*  form_wrap -> input_grp -> input property (first and last name) */
+	width: 165px;
+  color: rgb(0, 0, 0);
+  background-color:rgba(69, 67, 67, 0.3);
+}
+
+.form_wrap  input[type="text"]{									/* form_wrap -> input property(all the input box except upper 2) */
+	width: 100%;
+	border-radius: 3px;
+	border: 1.3px solid #c9cad4;
+  color: rgb(0, 0, 0);
+  background-color:rgba(69, 67, 67, 0.3);
+	padding: 10px;
+	outline: none;
+}
+
+.form_wrap  input[type="text"]:focus{							/* form_wrap-> input focusing property */
+  background-color: rgba(245, 246, 247, 0.819);
+	border-color: #063abd;
+}
+.details{																				/* property use on Feed back heading */
+	color: #e8e8ef;
+
+}
+.form_wrap textarea{															/* property on textarea */
+  width: 388px;
+  border-radius: 3px;
+  color: rgb(0, 0, 0);
+	border: 1.3px solid #e8e8ef;
+  background-color:rgb(69, 67, 67,0.3);
+}
+textarea:focus,																			/* focusing on textarea */
+textarea:valid{
+  background-color:  rgba(245, 246, 247, 0.819);
+  border-color: #063abd;
+
+}
+
+.form_wrap ul{																		/* property used in Gender part  */
+ border:1px solid rgb(115, 185, 235);
+ background-color:rgb(0, 0, 0,0.3);
+ width:70%;
+ margin-left: 15%;
+ padding: 14px 10px;
+ border-radius: 20px;
+ display: flex;
+ justify-content: center;
+}
+
+.form_wrap ul li:first-child{									/* right margin on 1st child of gender part */
+	margin-right: 15px;
+}
+
+.form_wrap ul .radio_wrap{									/* property used in radio block part */
+	position: relative;
+	margin-bottom: 0;
+}
+
+.form_wrap ul .radio_wrap .input_radio{				/* property used in input box of radio block */
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+}
+
+.form_wrap ul .radio_wrap span{								/* property used in span part of radio block */
+	display: inline-block;
+	font-size: 17px;
+	padding: 3px 15px;
+	border-radius: 15px;
+	color: bold #010418aa;
+}
+
+.form_wrap .input_radio:checked ~ span{						/* after checking the changing of property of span of radio block */
+	background: #105ce2;
+  color:rgb(18, 16, 16);
+}
+
+.form_wrap .submit_btn{													/* property used in submit button */
+	width: 100%;
+	background: #0d6ad7;
+	padding: 10px;
+	border: 0;
+  color:white;
+  font-size:17px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.form_wrap .submit_btn:hover{									/* hovering on submit button */
+  background-color: #059c94;
+    
+}
+.ff{																				/* div part of footer */
+	display: flex;
+	align-items: flex-end;
+  }
+  footer {																		/*property on footer( background property)*/
+	background-color: #121315;
+	color: #a7a7a7;
+	font-size: 16px;
+  }
+  footer * {																	/* property used in all th element of footer */
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+  }
+  .row {
+	padding: 1em 1em;														/*  upper row  */
+  }
+  .row.primary {																/*using of grid for row and column */
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 2fr;
+	align-items: stretch;
+  }
+  .column {																			/* flex on each colun */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 2em;
+	min-height: 11em;
+  }
+  h3 {                                              /* heading */
+	width: 100%;
+	text-align: left;
+	color: white;
+	font-size: 1.1em;
+	white-space: nowrap;
+  }
+ .ff .column ul {                         
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+  }
+  .ff .column  li:not(:first-child) {
+	margin-top: 0.5em;
+  }
+  .ff .column ul li a {
+	color: #a7a7a7;
+	text-decoration: none;
+  }
+ .ff .column  ul li a:hover {                       /*hovering on list of term and condition */
+	color: #2a8ded;
+  }
+  .about p {
+	text-align: justify;
+	line-height: 1;
+	margin: 0;
+  }
+ .column .fot input,
+ .column .fot button {
+	font-size: 1em;
+	padding: 1em;
+	width: 200px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+
+  }
+ 
+  .column .fot button {
+	background-color: #c7940a;
+	color: #ffffff;
+  }
+  .social {                                   /*social icons */
+	display: flex;
+	justify-content: space-around;
+	font-size: 2.2em;
+	flex-direction: row;
+	margin-top: 0.3em;
+  }
+  .social i {
+	color: #bac6d9;
+  }
+  
+  .copyright {                            
+	height:40px;
+	padding: 0.2em 1em;
+	background-color: #25262e;
+  }
+  .copyright p {
+	font-size: 1.3em;
+	text-align: right;
+  }
+  @media screen and (max-width: 600px) {
+	.row.primary {
+	grid-template-columns: 1fr;
+	}
+  
+  }

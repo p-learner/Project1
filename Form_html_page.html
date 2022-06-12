@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="./Form_css_page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"> 
+</head> 
+<body>
+  <section class="main">
+       <div class="main-overlay">
+            <div class="header">
+            <div class="container">
+              <li class="bar1"></li>
+              <li class="bar2"></li>
+              <li class="bar3"></li>
+          </div>
+          <div class="logo">
+            <img src="./logo.jpg" alt="Rail-in ur-Way" style="margin-top:20px;margin-left:60px;width:100px ;height:85px;border-radius: 53%;">
+          </div>
+          <div class="search-container">
+              <form  class="search" action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              </div>
+          <ul class="lis">
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">CONTACT US</a></li>
+              <li><a href="">PROFILE</a></li>
+          </ul>
+        </div>
+            <div class="wrapper">
+            <div class="registration_form">
+            <div class="title">
+            Registration Form
+            </div>
+    
+          <form>
+               <div class="form_wrap">
+                         <div class="input_grp">
+                           <div class="input_wrap">
+                               <label for="fname">First Name</label>
+                               <input type="text" id="fname" placeholder="first name" required>
+                            </div>
+                         <div class="input_wrap">
+                              <label for="lname">Last Name</label>
+                             <input type="text" id="lname" placeholder="last name"required>
+                         </div>
+                        </div>
+                    <div class="input_wrap">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" placeholder="Email" required>
+                    </div>
+    
+                    <div class="input_wrap">
+                        <label for="number">Contact Number</label>
+                        <input type="text" id="number" placeholder="contact number" required>
+                    </div>
+                   <div class="input_wrap">
+                       <label for="pnr">PNR Number</label>
+                       <input type="text" id="pnr" placeholder="PNR Number" required>
+                    </div>
+                   <div class="input_wrap">
+                       <label for="loc">Current Location</label>
+                       <input type="text" id="loc" placeholder="current location" required>
+                    </div>
+                    <div class="input-wrap">
+                        <span class="details">Feed-Back</span><br>
+                        <textarea class="last" name="msg" id="msg" style="height:40px"  placeholder=" Your message..." required></textarea>
+                    </div>
+                    <div class="input_wrap">
+                         <label>Gender</label>
+                        <ul>
+                            <li>
+                              <label class="radio_wrap">
+                                  <input type="radio" name="gender" value="male" class="input_radio" checked>
+                                  <span>Male</span>
+                              </label>
+                            </li>
+                             <li>
+                                <label class="radio_wrap">
+                                  <input type="radio" name="gender" value="female" class="input_radio">
+                                  <span>Female</span>
+                                </label>
+                             </li>
+    
+                        </ul>
+                    </div>
+                    <div class="input_wrap">
+                       <input type="submit" value="Submit" class="submit_btn">
+                    </div>
+                </div>
+          </form>
+        </div>
+      </div>
+        </div>
+        <div class="ff">
+            <footer>
+                <div class="row primary">
+                  <div class="column about">
+                  <h3>Indian  Rilway</h3>
+                   <p>
+                      All Right Reserved.<br>
+                      Browser Support IE10 and IE11 and chrome 5.0
+                  </p><br>
+                  <p style="font-size:20px; color:cadetblue">Get Connected with us on social networks</p>
+                  <div class="social">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-instagram-square"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <i class="fa-brands fa-youtube-square"></i>
+                    <i class="fa-brands fa-whatsapp-square"></i>
+                  </div>
+                </div>
+                <div class="column links">
+                <h3>Some Links</h3>
+                <ul>
+                  <li>
+                  <a href="#faq">F.A.Q</a>
+                  </li>
+                  <li>
+                  <a href="#cookies-policy">Cookies Policy</a>
+                  </li>
+                  <li>
+                  <a href="#terms-of-services">Terms Of Service</a>
+                  </li>
+                  <li>
+                  <a href="#support">Support</a>
+                  </li>
+                </ul>
+                </div>
+                <div class="column Subscribe">
+                 <h3>Newsletter</h3>
+                  <div class="fot">
+                   <input  class="em" type="email" placeholder="Your email id here" />
+                   <button class="sub">Subscribe</button>
+                  </div>
+                </div>
+                </div>
+                <div class="row copyright">
+                  <p>Copyright &copy; 2022  RAIL-WAY-IND</p>
+                </div>
+                </footer>
+            </div>
+</section>
+</body>
+</html>
